@@ -1,0 +1,29 @@
+-- CREATE database students;
+-- use students;
+-- create table register(
+-- 	id int not null auto_increment,
+--     users varchar(255),
+--     codekata int,
+--     attendance int,
+--     topics varchar(255) unique,
+--     tasks varchar(255),
+--     company_drives varchar(255),
+-- 	mentors varchar(255),
+--     students_activated_courses varchar(255),
+--     courses varchar(255),
+--       primary key (id)
+--     );	
+ -- SELECT * FROM register; 
+-- insert into register (users,codekata,attendance,topics,tasks,company_drives,mentors,students_activated_courses,courses)
+-- value 
+-- ('Smit','100','75','React','20','Attended','Akber','MySQL','Full Stack Development'),
+-- ('Harmit','113','80','C','21','No Attended','Sohil','MySQL','Full Stack Developer'),
+-- ('Harshit','103','78','Javascript','15','No Attended','Manan','React','Frontent React'),
+-- ('Amit','99','86','Python','25','Attended','Yuvraj','HTML/CSS','React js'),
+-- ('Vimal','150','100','HTML','12','No Attended','Mukesh','Anguler','HTML/CSS/JS');
+-- --  SELECT * FROM register; 
+ -- select mentors from register;
+-- select SUM(codekata) AS "total codekata" from register;
+ -- select users,mentors from register;
+ -- select * from register where company_drives like 'No Attended'
+ select users,students_activated_courses,courses from register;
